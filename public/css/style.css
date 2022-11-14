@@ -1,0 +1,129 @@
+/* general style*/
+body {
+  background-color: gainsboro;
+}
+/* Start header */
+header .cover-head {
+  background-image: url("../images/headImage.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+}
+/* End header */
+/* start list */
+.contain {
+  position: absolute;
+  width: 800px;
+  height: 100%;
+  min-height: 800px;
+  top: 120px;
+  right: 50px;
+  left: 50px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .contain {
+    width: 300px;
+  }
+}
+.contain .title-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.contain .title-list h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+.contain .title-list i {
+  padding-top: 10px;
+}
+
+.contain .input-text {
+  display: flex;
+  justify-content: space-between;
+}
+.contain .input-text input[type="text"] {
+  width: calc(100% - 100px);
+  display: block;
+  margin: 20px 0;
+  height: 40px;
+  padding: 20px;
+  border-color: white;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  flex-basis: 75%;
+}
+.contain .input-text button[type="submit"] {
+  flex-basis: 25%;
+  min-width: 100px;
+  min-height: 40px;
+  border: none;
+  border-color: white;
+  border-radius: 0 5px 5px 0;
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: blueviolet;
+}
+.contain .input-text input:focus {
+  outline: none;
+}
+.contain .input-text button[type="submit"]:hover {
+  color: white;
+  outline: none;
+  background-color: blueviolet;
+}
+.contain .list-item {
+  background-color: white;
+  border-radius: 10px;
+}
+.contain .list-item ul {
+  list-style: none;
+  padding: 0;
+}
+.contain .list-item ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.contain .list-item ul li:last-child {
+  background-color: rgb(182, 122, 238);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  border-radius: 0px 0 10px 10px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .contain .list-item ul li:last-child { 
+    text-transform: capitalize;
+  }
+}
+.contain .list-item ul li a {
+  padding: 5px 0;
+  color: blueviolet;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+.contain .list-item ul li a:hover {
+  color: red;
+}
+.contain .list-item ul li a i {
+  width: 30px;
+  height: 30px;
+}
+.contain .list-item ul li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #ddd;
+  width: 100%;
+}
+/* End list */

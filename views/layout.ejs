@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %> </title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
+        <!-- font-awesome library -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
+        rel="stylesheet"/> 
+
+        <!-- css custom file  -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <!-- Start-header -->
+        <header>
+            <div class="cover-head"></div>
+        </header>
+        <!-- End-header -->
+        <!-- Start list -->
+        <div class="list">
+            <div class="contain">
+            <% if(message != "") { %>
+                <div class="container alert alert-<%= statue %>" role="alert"><%= message %></div>
+            <% }%>
+                <div class="title-list">
+                    <h2>todo</h2>
+                    <i class="fas fa-lg fa-moon"></i>
+                </div>
+                <form class="input-text" method="post" action="/" >
+                    <input type="text" placeholder="create new item..." name ="item"/>
+                    <button type="submit">add item</button>
+                </form>
+                <div class="list-item" >
+                    <ul id="list">
+                        <% for(let event of events) { %>
+                        <li> <%= event.item %> <a type="button" href = "<%= event.id %>/delete"><i class="fas fa-times fa-lg"></i></a></li>
+                        <% } %>
+                        <li> Number of items is <q> <%= itemNums %></q></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End list -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+            <script src="/js/main.js"></script>
+    </body>
+
+</html>
