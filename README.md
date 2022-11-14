@@ -6,3 +6,6 @@
 ---
 ## print success message for user
 ![success](https://user-images.githubusercontent.com/94392724/201762166-24a710d5-b896-403d-94d1-b9f503d7951b.png)
+---
+### i use idea of design from here
+https://www.frontendmentor.io/solutions/to-do-list-ryIVy_7U9
