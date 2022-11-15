@@ -1,14 +1,17 @@
 /* general style*/
 body {
   background-color: gainsboro;
+  margin: 0;
 }
 /* Start header */
+
 header .cover-head {
   background-image: url("../images/headImage.jpeg");
   background-size: cover;
-  height: 300px;
+  height: 250px;
   width: 100%;
   padding: 50px;
+  margin: 0;
   position: relative;
 }
 /* End header */
@@ -51,7 +54,7 @@ header .cover-head {
   width: calc(100% - 100px);
   display: block;
   margin: 20px 0;
-  height: 40px;
+  height: 15px;
   padding: 20px;
   border-color: white;
   border-radius: 5px 0 0 5px;
@@ -77,6 +80,7 @@ header .cover-head {
   color: white;
   outline: none;
   background-color: blueviolet;
+  cursor: pointer;
 }
 .contain .list-item {
   background-color: white;
@@ -126,4 +130,20 @@ header .cover-head {
   background-color: #ddd;
   width: 100%;
 }
+.alert {
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: white;
+}
+.alert-success {
+  background-color: rgb(144, 219, 154);
+}
+.alert-danger {
+  background-color: rgb(187, 184, 134);
+}
+
 /* End list */
